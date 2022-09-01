@@ -23,7 +23,7 @@ const adminPosts = require('./routes/admin/posts.js')
 
 connection();
 const app = express();
-const port = 5000
+
 app.use(express.static('about_images'))
 app.use(express.static('post_images'))
 app.use(express.static('product_images'))
@@ -228,5 +228,9 @@ app.post("/subscribe",function(req,res){
                   }   )
 	// mail chimp end
 
+let port = process.env.PORT;
+if (port == null || port == "") {
+  port = 5000;
+}
 
-app.listen(port, () => console.info(`App listening on port ${port}`))
+app.listen(port, () => console.info(`server has been started successfully on port ${port}`))

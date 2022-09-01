@@ -9,6 +9,9 @@
   },
   "author": "Mulugeta Linger",
   "license": "ISC",
+  "engines": {
+    "node": "18.2.0"
+  },
   "dependencies": {
     "admin-bro-expressjs": "^2.1.1",
     "admin-bro-mongoose": "^0.5.2",
