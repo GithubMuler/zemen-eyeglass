@@ -60,16 +60,16 @@ section {
   margin-top: 1rem;
   padding: .8rem 2.8rem;
   font-size: 1.7rem;
-  color: #333;
-  border: 0.2rem solid #333;
-  background: none;
+  color: #DFFF00;
+  border: 0.2rem solid #2ECC71;
+  background: #DE3163;
   cursor: pointer;
   border-radius: .5rem;
 }
 
 .btn:hover {
-  background: #333;
-  color: #fff;
+  background: #2ECC71;
+  color: white;
 }
 
 .header {
@@ -942,3 +942,96 @@ section {
   }
 }
 /*# sourceMappingURL=style.css.map */
+@import url(https://fonts.googleapis.com/css?family=Roboto:500);
+.google-btn {
+  width: 184px;
+  height: 42px;
+  background-color: #4285f4;
+  border-radius: 2px;
+  box-shadow: 0 3px 4px 0 rgba(0, 0, 0, 0.25);
+}
+.google-btn .google-icon-wrapper {
+  position: absolute;
+  margin-top: 1px;
+  margin-left: 1px;
+  width: 40px;
+  height: 40px;
+  border-radius: 2px;
+  background-color: #fff;
+}
+.google-btn .google-icon {
+  position: absolute;
+  margin-top: 11px;
+  margin-left: 11px;
+  width: 18px;
+  height: 18px;
+}
+.google-btn .btn-text {
+  float: right;
+  margin: 11px 11px 0 0;
+  color: #fff;
+  font-size: 14px;
+  letter-spacing: 0.2px;
+  font-family: "Roboto";
+}
+.google-btn:hover {
+  box-shadow: 0 0 6px #4285f4;
+}
+.google-btn:active {
+  background: #1669f2;
+}
+/* Set the size of the div element
+		that contains the map */
+		#map {
+			height: 500px;
+			width: 550px;
+		}
+    		.carousel-caption{
+          position: absolute;
+          top: 10%;
+          left: 10%;
+         z-index: 10;
+          max-width: 400px;
+          padding: 0 20px;
+          padding-top: 20px;
+          padding-bottom: 20px;
+          transform: translate(-50%, -50%);
+          text-shadow: 0 1px 2px rgba(0, 0, 0, .6);
+          margin: 0 auto;
+          margin-top: 200px;
+          text-align: center;
+        }
+
+
+                         /* (A) WRAPPER */
+                         .fullwrap {
+                           position: relative;
+                           /* required for (c2) */
+                           max-width: 500px;
+                           /* optional */
+                         }
+                      .fullwrap img {
+                           width: 100%;
+                         }
+                         .fullcap {
+                           box-sizing: border-box;
+                           width: 100%;
+                           height: 100%;
+                          position: absolute;
+                           top: 0;
+                           left: 0;
+                           text-align: left;
+                           padding-top: 10%;
+                          padding-left: 5%;
+                        background-color: #008CBA;
+                           color: white;
+                            visibility: none;
+                              opacity: 0;
+                              transition: opacity 0.3s;
+                                font-size: 20px;
+                         }
+                          .fullwrap:hover  .fullcap {
+                           visibility: visible;
+                           opacity: 1;
+                         }
+                            

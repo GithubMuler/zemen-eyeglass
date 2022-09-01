@@ -1,0 +1,57 @@
+<%- include("./admin_partials/header"); -%>
+
+    <body>
+        <div class="container-xxl position-relative bg-white d-flex p-0">
+            <!-- Spinner Start -->
+            <div id="spinner"
+                class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+                <div class="spinner-border text-primary" style="width: 3rem; height: 3rem;" role="status">
+                    <span class="sr-only">Loading...</span>
+                </div>
+            </div>
+            <!-- Spinner End -->
+            <%- include("./admin_partials/sidebar"); -%>
+
+                <!-- Content Start -->
+                <div class="content">
+                    <%- include("./admin_partials/navbar"); -%>
+                        <!-- Blank Start -->
+                        <div class="container-fluid pt-4 px-4">
+                            <div class="row vh-100 bg-light rounded align-items-center justify-content-center mx-0">
+                                <div class="bg-light rounded h-100 p-4">
+                                    <!--  success  and error message display-->
+                                    <%- include("./admin_partials/messages"); -%>
+                                        <h6 class="mb-4">Edit Category</h6> <br> <br>
+                                   <form method="POST" action="/admin/category/edit-category/<%= id %>">
+                                            <div class="mb-3">
+                                                <label for="Title" class="form-label">Title</label>
+                                                <input type="text" class="form-control" id="title" name="title" value="<%= title %>"
+                                                    placeholder="title" autofocus>
+                                            </div>
+                                            <button type="submit" class="btn btn-primary">Submit</button>
+                                </form>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Blank End -->
+                        <%- include("./admin_partials/footer"); -%>
+                </div>
+                <!-- Content End -->
+                <!-- Back to Top -->
+                <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top"><i class="bi bi-arrow-up"></i></a>
+        </div>
+        <!-- JavaScript Libraries -->
+        <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+        <script src="lib/chart/chart.min.js"></script>
+        <script src="lib/easing/easing.min.js"></script>
+        <script src="lib/waypoints/waypoints.min.js"></script>
+        <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+        <script src="lib/tempusdominus/js/moment.min.js"></script>
+        <script src="lib/tempusdominus/js/moment-timezone.min.js"></script>
+        <script src="lib/tempusdominus/js/tempusdominus-bootstrap-4.min.js"></script>
+        <!-- Template Javascript -->
+        <script src="/admin/js/main.js"></script>
+    </body>
+
+    </html>

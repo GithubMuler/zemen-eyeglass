@@ -85,23 +85,24 @@
 <!-- about section starts  -->
 
 <section class="about">
-
-    <h1 class="title">why choose us?</h1>
-
+<!-- //why choose us? -->
+    <% about.forEach(function(about){ %>
+    <h1 class="title"><%=about.title%></h1>
     <div class="row">
-
         <div class="image">
-            <img src="images/about-img.jpg" alt="">
+            <img src="<%= about.image %>"  alt="">
         </div>
-
         <div class="content">
-            <h3>the best eye glasses sellers</h3>
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. In assumenda ut nisi suscipit voluptatum, hic perspiciatis fugit quae quasi quod laudantium doloremque repellat, incidunt minus architecto dolore vero, molestiae quaerat?</p>
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veritatis perferendis necessitatibus exercitationem quam tempore recusandae iure qui, nobis ut aliquam.</p>
+            <p> <%= about.content %> </p>
             <a href="#" class="btn">read more</a>
         </div>
-        
     </div>
+<% }) %>
+
+
+
+
+
 
     <div class="icons-container">
 
@@ -116,8 +117,8 @@
         </div>
 
         <div class="icons">
-            <img src="images/icon-3.png" alt="">
-            <h3>easy returns</h3>
+            <img src="images/affordable.png" alt="">
+            <h3>low cost</h3>
         </div>
 
         <div class="icons">
@@ -187,14 +188,14 @@
             <h3>newsletter</h3>
             <p>subscribe for latest updates</p>
             <form action="">
-                <input type="email" placeholder="enter your emal">
+                <input type="email" placeholder="enter your email">
                 <input type="submit" value="subscribe" class="btn">
             </form>
         </div>
 
     </div>
 
-    <div class="credit"> created by <span>mr .web designer</span> | all rights reserved </div>
+    <div class="credit"> created by <span>Mr Mulugeta Linger</span> | all rights reserved </div>
 
 </section>
 

@@ -31,7 +31,7 @@
             <li><a href="/">home</a></li>
             <li><a href="/products">products +</a>
 			<ul>
-                    <li><a href="#">frame</a></li>
+                    <li><a href="/products">frame</a></li>
                     <li><a href="#">lense</a></li>
 					<li><a href="#">accessory</a></li>
                 </ul>
@@ -89,7 +89,7 @@
     <h1 class="title"> featured products </h1>
 
     <div class="box-container">
-
+<% products.forEach(function(product){ %>
         <div class="box">
             <div class="image">
                 <div class="icons">
@@ -97,10 +97,10 @@
                     <a href="#" class="fas fa-share"></a>
                     <a href="#" class="fas fa-eye"></a>
                 </div>                
-                <img src="images/product-1.jpg" alt="">
+                <img src="<%= product.image %>" alt="">
             </div>
             <div class="content">
-                <h3>premium glasses</h3>
+                <h3><%=product.title%></h3>
                 <div class="stars">
                     <i class="fas fa-star"></i>
                     <i class="fas fa-star"></i>
@@ -108,11 +108,11 @@
                     <i class="fas fa-star"></i>
                     <i class="fas fa-star-half-alt"></i>
                 </div>
-                <div class="price">$20.00 <span>$25.00</span></div>
+                <div class="price"><%=product.price%> birr</div>
             </div>
         </div>
-
-        <div class="box">
+<% }) %>
+        <!-- <div class="box">
             <div class="image">
                 <div class="icons">
                     <a href="#" class="fas fa-shopping-cart"></a>
@@ -286,7 +286,7 @@
                 </div>
                 <div class="price">$20.00 <span>$25.00</span></div>
             </div>
-        </div>
+        </div> -->
 
     </div>
     
@@ -353,7 +353,7 @@
 
     </div>
 
-    <div class="credit"> created by <span>mr .web designer</span> | all rights reserved </div>
+    <div class="credit"> created by <span>Mr Mulugeta Linger</span> | all rights reserved </div>
 
 </section>
 

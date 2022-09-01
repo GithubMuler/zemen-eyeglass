@@ -84,27 +84,35 @@
 <!-- header section -->
 
 <!-- contact section starts  -->
-
 <section class="contact">
 
-    <h1 class="title"> get in touch </h1>
+        <h2 style="background-color:orange "> <%= message %></h2>
+<h1 class="title"> get in touch </h1>
+<div class="row">
 
-    <div class="row">
-
-        <form action="">
-            <input type="text" placeholder="your name" class="box">
-            <input type="number" placeholder="your number" class="box">
-            <input type="email" placeholder="your email" class="box">
-            <textarea name="" placeholder="your message" id="" cols="30" rows="10"></textarea>
-            <input type="submit" value="send message" class="btn">
+        <form method="POST"action="/contact" class="contact-form" >
+            <input type="text" placeholder="your name" class="box" name="name" autofocus>
+            <input type="number" placeholder="your number" class="box" name="phone">
+            <input type="email" placeholder="your email" class="box" name="email" required>
+            <input type="test" placeholder="your subject" class="box" name="subject">
+            <textarea  placeholder="your message"  cols="30" rows="10" name="message" required></textarea>
+            <input type="submit" value="send message" class="btn ">
         </form>
 
-        <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15076.89592087332!2d72.8319697277345!3d19.14167056419224!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7b63aceef0c69%3A0x2aa80cf2287dfa3b!2sJogeshwari%20West%2C%20Mumbai%2C%20Maharashtra%20400047!5e0!3m2!1sen!2sin!4v1636210664473!5m2!1sen!2sin" allowfullscreen="" loading="lazy"></iframe>
+
+    <div>
+            <div class="map" id="map"></div>
+            <script async src="https://maps.googleapis.com/maps/api/js?AIzaSyCruCuB3YV04tR2gFYc85HkL59ZlCsXptY&callback=initMap">
+            </script>
 
     </div>
 
-</section>
+        <!-- <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15076.89592087332!2d72.8319697277345!3d19.14167056419224!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7b63aceef0c69%3A0x2aa80cf2287dfa3b!2sJogeshwari%20West%2C%20Mumbai%2C%20Maharashtra%20400047!5e0!3m2!1sen!2sin!4v1636210664473!5m2!1sen!2sin" 
+        allowfullscreen="" loading="lazy"></iframe> -->
 
+
+</div>
+</section>
 <!-- contact section ends -->
 
 
@@ -165,11 +173,11 @@
 
     </div>
 
-    <div class="credit"> created by <span>mr .web designer</span> | all rights reserved </div>
+    <div class="credit"> created by <span>Mr Mulugeta Linger</span> | all rights reserved </div>
 
 </section>
 
 <!-- footer section ends -->
-
+<!-- <script src="/js/app.js"></script> -->
 </body>
 </html>

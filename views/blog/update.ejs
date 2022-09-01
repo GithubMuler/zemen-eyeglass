@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="utf-8">
+  <title>Daily Eye-Glass</title>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="/styles.css">
+  <nav class="navbar navbar-default">
+    <div class="container">
+      <div class="navbar-header">
+        <p class="navbar-brand">UPDATE POST</p>
+      </div>
+      <ul class="nav navbar-nav navbar-right">
+        <li id="blog"><a href="/admin">Home</a></li>
+        <li id="blog"><a href="/admin/compose">Add</a></li>
+        <li id="blog"><a href="/admin/posts">Manage</a></li>
+
+      </ul>
+    </div>
+  </nav>
+
+<body>
+  <div class="container">
+    <div>
+       
+    <form  action="/admin/posts/update/<%= post._id %>" method="post" enctype="multipart/form-data">
+      
+      <div class="form-group">
+        <label>Title</label>
+        <input class="form-control" type="text" name="title" value="<%= post.title%>"> 
+        <br>
+        <label for="image" >Select Image</label>
+        <input class="form-control" type="file" name="image" >
+        <img src="/<%= post.image %>" width="100" hight="100" class="img-thumbnails mt-1">
+        <input type="hidden" name="old_image" value="<%= post.image%>"> <br>
+        
+        <label>Description</label>
+        <textarea class="form-control" type="textarea"  name="content" rows="5" cols="30"><%= post.content%></textarea> <br>
+      <input class="btn btn-success btn-lg" type="submit" name="submit" value="Update user" />
+      </div>
+    </form>
+  </div>
+
+  <%- include("../partials/footer"); -%>

@@ -9,6 +9,7 @@
     <!-- font awesome cdn link  -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 
+    <link rel="stylesheet" href="css/bootstrap-social.css">
     <!-- custom css file link  -->
     <link rel="stylesheet" href="css/style.css">
 
@@ -79,20 +80,20 @@
         <h3>register now</h3>
         <div class="inputBox">
             <span class="fas fa-user"></span>
-            <input type="text" name="full_name" placeholder="enter your full name" id="fname"  Required> 
+            <input type="text" name="full_name" placeholder="enter your full name" id="fname"  > 
         </div>
 		 <div class="inputBox">
             <span class="fas fa-phone"></span>
-            <input type="text" name="phone_number" placeholder="enter your phone number" id="pnumber"  Required> 
+            <input type="text" name="phone_number" placeholder="enter your phone number" id="pnumber"  > 
         </div>
 		</div>
 		 <div class="inputBox">
             <span class="fas fa-address-card"></span>
-            <input type="text" name="address" placeholder="enter your address" id="adress" Required> 
+            <input type="text" name="address" placeholder="enter your address" id="adress" > 
         </div>
         <div class="inputBox">
             <span class="fas fa-envelope"></span>
-            <input type="email" name="email" placeholder="enter your email" id="email" Required>
+            <input type="email" name="username" placeholder="enter your email" id="email" Required>
         </div>
         <div class="inputBox">
             <span class="fas fa-lock"></span>
@@ -100,9 +101,15 @@
         </div>
         <div class="inputBox">
             <span class="fas fa-lock"></span>
-            <input type="password" name="confirm_password" placeholder="confirm your password" id="pconfirm" Required>
+            <input type="password" name="confirm_password" placeholder="confirm your password" id="pconfirm" >
         </div>
-		<button type="submit" class="btn">sign up</button>
+		<div>
+            <button type="submit" class="btn">sign up</button>
+            <a class="btn btn-block"  href="/auth/google/" role="button">
+                <i class="fab fa-google"></i>
+                <b>sign up with Google</b>
+            </a>
+        </div>
         <a href="/login" class="btn">already have an account</a>
     </form>
 </section>
@@ -149,7 +156,7 @@
             </form>
         </div>
 </div>
-<div class="credit"> powered by <span>mulersoft.</span>  all rights reserved </div>
+<div class="credit"> powered by <span>Mr Mulugeta Linger.</span>  all rights reserved </div>
 </section>
 <!-- footer section ends -->
 </body>

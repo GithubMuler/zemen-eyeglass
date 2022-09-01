@@ -4,7 +4,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>home</title>
+<title>Zemen</title>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+<link rel="icon" href="/img/icons8-eyewear-56.png" type="image/x-icon">
 
     <!-- font awesome cdn link  -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
@@ -29,7 +32,7 @@
             <li><a href="/">home</a></li>
             <li><a href="products">products +</a>
 			<ul>
-                    <li><a href="#">frame</a></li>
+                    <li><a href="/products">frame</a></li>
                     <li><a href="#">lense</a></li>
 					<li><a href="#">accessory</a></li>
                 </ul>
@@ -72,41 +75,58 @@
 
 <!-- home section starts      -->
 
-<section class="home">
-
-    <div class="slide active" style="background: url(images/home-bg-1.png) no-repeat;">
-        <div class="content">
-            <span>protect your eyes</span>
-            <h3>upto 50% off</h3>
-            <a href="#" class="btn">shop now</a>
+<!-- <section class="home" > -->
+    <div id="carouselExampleCaptions" class="carousel carousel-fed carousel-dark slide" data-bs-ride="carousel" data-bs-interval="3000" >
+        <div class="carousel-indicators ">
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+                aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                aria-label="Slide 3"></button>
+            
         </div>
+
+        <div class="carousel-inner">
+
+            <div class="carousel-item  ">
+                <img src="images/home-bg-1.png" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block ">
+					  <h1><span>Zemen Optometry</span> </h1>
+                     <h3>upto 50% off</h3>
+                     <a href="/contact" class="btn">visit now</a>
+				</div>
+            </div>
+            
+
+            <div class="carousel-item">
+                <img src="images/home-bg-2.png" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block ">
+                   <h1>  <span>protect your eyes</span></h1>
+                     <h3>upto 50% off</h3>
+                     <a href="/order" class="btn">shop now</a>                    
+					</div>
+            </div>
+
+            <div class="carousel-item active">
+                <img src="images/home-bg-3.png" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block ">
+                     <h1> <span>ውብትን እና ጤንንነትን እናጎናጽፋለን!</span> </h1>
+            <h3>4ኪሎ ቅድስት ማሪያም ቤ/ክርስቲያን ፊት ለፊት 200ሜ</h3>
+            <a href="tel:+251936952982" class="btn">ደውሉ!</a>
+			</div>
+            </div>		
+
     </div>
-
-    <div class="slide" style="background: url(images/home-bg-2.png) no-repeat;">
-        <div class="content">
-            <span>protect your eyes</span>
-            <h3>upto 50% off</h3>
-            <a href="#" class="btn">shop now</a>
-        </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
     </div>
-
-    <div class="slide" style="background: url(images/home-bg-3.png) no-repeat;">
-        <div class="content">
-            <span>protect your eyes</span>
-            <h3>upto 50% off</h3>
-            <a href="#" class="btn">shop now</a>
-        </div>
-    </div>
-
-    <div id="next-slide" onclick="next()" class="fas fa-angle-right"></div>
-    <div id="prev-slide" onclick="prev()" class="fas fa-angle-left"></div>
-
-</section>
-
-<!-- home section ends     -->
-
-<!-- banner section starts  -->
-
 <section class="banner">
 
 
@@ -140,19 +160,34 @@
         </div>
     </div>
 
+    <div class="box">
+        <img src="images/Kids_Glasses_2020_myopia_1-02_1080x.webp" alt="">
+        <div class="content">
+            <span>special offer</span>
+            <h3>upto 50% off</h3>
+            <a href="#" class="btn">shop now</a>
+        </div>
+    </div>
+    <div class="box">
+        <img src="images/Young_teen_Sunlasses_2021_c-01_1080x.webp" alt="">
+        <div class="content">
+            <span>special offer</span>
+            <h3>upto 50% off</h3>
+            <a href="#" class="btn">shop now</a>
+        </div>
+    </div>
+    <div class="box">
+        <img src="images/DSC0140_1080x.webp" alt="">
+        <div class="content">
+            <span>special offer</span>
+            <h3>upto 50% off</h3>
+            <a href="#" class="btn">shop now</a>
+        </div>
+    </div>
+
 </section>
 
 <!-- banner section ends -->
-
-
-
-
-
-
-
-
-
-
 
 <!-- footer section starts  -->
 
@@ -172,41 +207,58 @@
             <a href="/cart"> <i class="fas fa-angle-right"></i> cart</a>
         </div>
 
-        <div class="box">
-            <h3>extra links</h3>
-            <a href="#"> <i class="fas fa-angle-right"></i> my account </a>
-            <a href="#"> <i class="fas fa-angle-right"></i> my order </a>
-            <a href="#"> <i class="fas fa-angle-right"></i> my wishlist </a>
-            <a href="#"> <i class="fas fa-angle-right"></i> terms of use </a>
-            <a href="#"> <i class="fas fa-angle-right"></i> privacy policy </a>
-        </div>
 
-        <div class="box">
-            <h3>follow us</h3>
-            <a href="#"> <i class="fab fa-facebook-f"></i> facebook </a>
-            <a href="#"> <i class="fab fa-twitter"></i> twitter </a>
-            <a href="#"> <i class="fab fa-instagram"></i> instagram </a>
-            <a href="#"> <i class="fab fa-pinterest"></i> pinterest </a>
-            <a href="#"> <i class="fab fa-linkedin"></i> linkedin </a>
-            <a href="#"> <i class="fab fa-github"></i> github </a>
-        </div>
+<div class="box">
+    <h3>contact us</h3>
+<a href="tel:+251936952982"> <i class="fas fa-angle-right"></i> phone </a>
+<a href="mailto:mulerselinger@gmail.com"> <i class="fab fa-google"></i> gmail </a>
+<a href="https://www.facebook.com/mulugeta.linger.9" target="_black"> <i class="fab fa-facebook-f"></i> facebook </a>
+<a href="https://t.me/mulersoft" target="_black"> <i class="fab fa-telegram"></i> telegram </a>
+<a href="https://www.linkedin.com/in/mulugeta-linger-0890bb19a/" target="_black"> <i class="fab fa-linkedin"></i> linkedin </a>
+<a href="https://github.com/GithubMuler" target="_black"> <i class="fab fa-github"></i> github </a>
+     </div>
+       
+        
 
-        <div class="box">
+<div class="box">
             <h3>newsletter</h3>
             <p>subscribe for latest updates</p>
-            <form action="/" method="POST">
-                <input name="email" type="email" placeholder="enter your email">
+            <form action="/subscribe" method="POST">
+                <input name="email" type="email" placeholder="enter your email" required >
                 <button class="btn" type="submit">subscribe</button>
-                <!-- <input type="submit" value="subscribe" class="btn"> -->
-            </form>
+               </form>
         </div>
 
+        <div class=" box ">
+            <div class="fullwrap">
+                <img src="images/mule.jpg" width=100%; class="mulee" alt="">
+              <div class="fullcap">
+    <b style="color:rgb(224, 109, 109)"> Name:</b>&nbsp Mulugeta Linger<br>
+    <b style="color:rgb(224, 109, 109)"> Dept:</b>&nbsp Software Eng<br>
+    <b style="color:rgb(224, 109, 109)"> Address:</b>&nbsp AASTU<br>
+    <b style="color:rgb(224, 109, 109)"> Phone:</b>&nbsp 0947300026<br>
+<a href="mailto:mulerselinger@gmail.com" type="button" class="btn" > 
+contact me!
+</a>
+   </div>
+               </div>
+            </div>
+           </div>
+
+</div>
+
+<div class="credit"> 
+    created by 
+        <a href="tel:+251947300026" target="_black">Mulugeta Linger </a>
+       &COPY; 2021
+    <script>
+       new Date().getFullYear()>2021&&document.write("-"+new Date().getFullYear());
+    </script>. all rights reserved 
     </div>
-
-    <div class="credit"> created by <span>Mr .Mulugeta Linger</span> | all rights reserved </div>
-
 </section>
-
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
 <!-- footer section ends -->
 
 </body>

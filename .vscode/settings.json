@@ -1,0 +1,32 @@
+{
+    "cSpell.words": [
+        "expressjs",
+        "fileupload",
+        "fileuploader",
+        "findorcreate",
+        "Mulugeta",
+        "Plaintextpassword"
+    ],
+    "editor.tokenColorCustomizations": {
+        "[Monokai]": {
+            "comments": "#229977"
+        },
+        "[*Dark*]": {
+            "variables": "#ff0080"
+        },
+        "[Abyss][Red]": {
+            "keywords": "#FF9900"
+        }
+    },
+    "workbench.colorCustomizations": {
+        "[Monokai]": {
+            "sideBar.background": "#347890"
+        }
+    },
+    "npm.enableRunFromFolder": true,
+    "vsicons.associations.folderDefault.folder_light": null,
+    "vsicons.presets.foldersAllDefaultIcon": true,
+    "files.exclude": {
+        "": true
+    }
+}

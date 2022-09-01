@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>ADD POSTS</title>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="/styles.css">
+
+  <nav class="navbar navbar-default">
+    <div class="container">
+      <div class="navbar-header">
+        <p class="navbar-brand">Add New Post</p>
+      </div>
+      <ul class="nav navbar-nav navbar-right">
+        <li id="blog"><a href="/admin">Home</a></li>
+     
+        <li id="blog"><a href="/admin/posts">Manage</a></li>
+
+      </ul>
+    </div>
+  </nav>
+
+<body>
+  <div class="container">
+
+    <div>
+    <form class="" action="/admin/posts/compose" method="post" enctype="multipart/form-data">
+      <div class="form-group">
+        <label>Title</label>
+        <input class="form-control" type="text" name="postTitle"required>
+        <label for="image" >Select Image</label>
+        <input class="form-control" type="file" name="image" required>
+        <label>Description</label>
+        <textarea class="form-control" name="postBody" rows="5" cols="30" required></textarea>
+      </div>
+      <button class="btn btn-primary" type="submit" name="button">Publish</button>
+    </form>
+  </div>
+
+  <%- include("../partials/footer"); -%>
